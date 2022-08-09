@@ -1,13 +1,15 @@
 language: node_js
 node_js:
-  - 16
+- 16
 sudo: false
 script:
-  - npm test
+- npm test
 deploy:
   provider: heroku
   api_key:
-    secure: $HEROKU_KEY
-  app: devops-ultimate
+    secure: "$HEROKU_KEY"
+  app: auladevopsjpb-pipeline
   edge: true
-  
+  api:
+    key:
+      secure: fr02/HmxTL52D9di/vd3Dolg4Wuqn93DEjVInk91P8bYyE3sGHu9Hu4PS/+ciiBdU4ZNZJ2cy4P8EK/O8Wl547nc8soz9OkV0uB+RRfdnqhEjAQZX8LYYB495Dfws0JFaWCRtVNJ/omZ5imsbHqK2ByP8nsKyfQCqcpnI8beHUx0kPgsTFfq0+NygMTLAlPNITNBXVGJ1chA8X2ZYc5MWKCtqw0b7FCbu6BgrgmPbsp+/KWmpJfsHJ45DSqAyyCtEyqJlDk8z+TTT+pSg33o3n7fa2BQiOuGQyYO55nWdW5IPTSDrskQWRcjR7vIOOlYQQacgTf+DceVb9OoknQtkDHIr5kri2kk2JYdnYq0Xnrg1DoyyAdrp5h7GIed77eBiwTlAGUJVkgydLMXeBL6IxuJKt/rpMjQ2iA0rtsfrPwbTG8W/1Z4/l9RkAhaeXb/8ZMaI4zfktSVZhCpqGMpDcBq3OrtZ0aIS3cjEmknm3zhz/wY9NwJz2jSfV+YIESRBnLqZ+FKs9tAhOwf80eVt+IebtigIiEBNmCEuGi7uhZl59gLtXvzwGjCpSyirtK14ZTCx5qOan+ZV34d0Ij24VICq1kJrtKGG8cgW/KoYom05HHbNALMzMj2rMIoj+og6t03d1ovtua61tv7cAUs1hw4im2k4WqznX0xcNn9+TQ=
